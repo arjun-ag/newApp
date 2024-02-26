@@ -14,6 +14,7 @@ export const onCreateEntry = /* GraphQL */ `
         bucket
         region
         key
+        __typename
       }
       text
       titleText
@@ -24,6 +25,7 @@ export const onCreateEntry = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -40,6 +42,7 @@ export const onUpdateEntry = /* GraphQL */ `
         bucket
         region
         key
+        __typename
       }
       text
       titleText
@@ -50,6 +53,7 @@ export const onUpdateEntry = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -66,6 +70,7 @@ export const onDeleteEntry = /* GraphQL */ `
         bucket
         region
         key
+        __typename
       }
       text
       titleText
@@ -76,6 +81,7 @@ export const onDeleteEntry = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;

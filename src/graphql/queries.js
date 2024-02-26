@@ -11,6 +11,7 @@ export const getEntry = /* GraphQL */ `
         bucket
         region
         key
+        __typename
       }
       text
       titleText
@@ -21,6 +22,7 @@ export const getEntry = /* GraphQL */ `
       createdAt
       updatedAt
       owner
+      __typename
     }
   }
 `;
@@ -52,8 +54,10 @@ export const listEntries = /* GraphQL */ `
         createdAt
         updatedAt
         owner
+        __typename
       }
       nextToken
+      __typename
     }
   }
 `;
@@ -87,13 +91,10 @@ export const entryByDate = /* GraphQL */ `
         createdAt
         updatedAt
         owner
-        mediaLink {
-          bucket
-          key
-          region
-        }
+        __typename
       }
       nextToken
+      __typename
     }
   }
 `;

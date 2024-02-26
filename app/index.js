@@ -16,6 +16,9 @@ Amplify.configure({
     },
 });
 
+// Auth.configure(awsconfig);
+
+
 
 const Home = () => {
 
